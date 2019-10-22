@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="com.example.movienager.data.Movie" />
+        
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginBottom="5dp"
+    android:layout_marginHorizontal="3dp"
+    android:onClick="@{clickListener}">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img"
+            app:urlToImg="@{movie.Poster}"/>
+
+        <TextView
+            android:id="@+id/movieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@{movie.Title}"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+</layout>

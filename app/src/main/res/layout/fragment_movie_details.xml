@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.movienager.ui.movie.show.MovieDetailsViewModel" />
+
+    </data>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        app:urlToImgHeader="@{viewModel.movie.Poster}"/>
+
+    <TextView
+        android:id="@+id/movieTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:layout_marginTop="15dp"
+        android:text="@{viewModel.movie.Title}"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingHorizontal="5dp">
+
+        <TextView
+            android:text="@string/ui_movie_details_year" />
+        <TextView
+            android:text="@{viewModel.movie.Year}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_runtime" />
+        <TextView
+            android:text="@{viewModel.movie.Runtime}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_genre" />
+        <TextView
+            android:text="@{viewModel.movie.Genre}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_director" />
+        <TextView
+            android:text="@{viewModel.movie.Director}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_writer" />
+        <TextView
+            android:text="@{viewModel.movie.Writer}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_actors" />
+        <TextView
+            android:text="@{viewModel.movie.Actors}" />
+
+        <TextView
+            android:text="@string/ui_movie_details_plot" />
+        <TextView
+            android:text="@{viewModel.movie.Plot}" />
+    </GridLayout>
+
+</LinearLayout>
+</layout>

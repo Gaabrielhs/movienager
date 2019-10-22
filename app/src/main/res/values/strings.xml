@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Movienager</string>
+    <string name="title_home">Filmes</string>
+    <string name="title_perfil">Perfil</string>
+    <string name="title_movie_details">Visualização de filme</string>
+
+    <string name="ui_search_movie_label">Nome do filme</string>
+
+    <string name="btnSearch">Buscar</string>
+
+    <string name="placeHolderNoFilms">Sem filmes :(</string>
+    <string name="loadingLabel">Carregando filmes...</string>
+
+
+    <string name="ui_movie_details_year">Ano:</string>
+    <string name="ui_movie_details_runtime">Duração:</string>
+    <string name="ui_movie_details_genre">Gênero:</string>
+    <string name="ui_movie_details_director">Diretor(a):</string>
+    <string name="ui_movie_details_writer">Escritores:</string>
+    <string name="ui_movie_details_actors">Atores:</string>
+    <string name="ui_movie_details_plot">Resumo:</string>
+
+</resources>
